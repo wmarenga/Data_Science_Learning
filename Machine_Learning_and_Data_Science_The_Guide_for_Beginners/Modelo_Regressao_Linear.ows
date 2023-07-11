@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(278.0, 453.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(479.0, 181.0)" />
+		<node id="2" name="Linear Regression" qualified_name="Orange.widgets.model.owlinearregression.OWLinearRegression" project_name="Orange3" version="" title="Linear Regression" position="(477.0, 559.0)" />
+		<node id="3" name="Test and Score" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="Test and Score" position="(772.0, 428.0)" />
+		<node id="4" name="Data Info" qualified_name="Orange.widgets.data.owdatainfo.OWDataInfo" project_name="Orange3" version="" title="Data Info" position="(485.0, 280.0)" />
+		<node id="5" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(582.0, 745.0)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (1)" position="(774.0, 743.0)" />
+		<node id="7" name="Save Model" qualified_name="Orange.widgets.model.owsavemodel.OWSaveModel" project_name="Orange3" version="" title="Save Model" position="(771.0, 585.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Learner" sink_channel="Learner" enabled="true" />
+		<link id="3" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="4" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="5" source_node_id="2" sink_node_id="5" source_channel="Model" sink_channel="Predictors" enabled="true" />
+		<link id="6" source_node_id="0" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="7" source_node_id="5" sink_node_id="6" source_channel="Predictions" sink_channel="Data" enabled="true" />
+		<link id="8" source_node_id="2" sink_node_id="7" source_channel="Model" sink_channel="Model" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04)\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x001\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01M\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00]\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\\\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00L\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00}\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01)\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00}', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xd9\x00\x00\x00\xde\x00\x00\x07&amp;\x00\x00\x02\xf8\x00\x00\x02\xda\x00\x00\x01\x04\x00\x00\x07%\x00\x00\x02\xf7\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x02\xda\x00\x00\x01\x04\x00\x00\x07%\x00\x00\x02\xf7', 'selected_id': 'core\\imports-85.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x9a\x00\x00\x00&lt;\x00\x00\x07\xf9\x00\x00\x03*\x00\x00\x03\x9b\x00\x00\x00b\x00\x00\x07\xf8\x00\x00\x03)\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x03\x9b\x00\x00\x00b\x00\x00\x07\xf8\x00\x00\x03)', 'select_rows': True, 'selected_cols': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], 'selected_rows': [189], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="2" format="literal">{'alpha_index': 0, 'auto_apply': True, 'autosend': True, 'controlAreaVisible': True, 'fit_intercept': True, 'l2_ratio': 0.5, 'learner_name': '', 'reg_type': 0, 'ridge': False, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="3" format="pickle">gASVLgQAAAAAAAB9lCiMFGNvbXBhcmlzb25fY3JpdGVyaW9ulEsAjBJjb250cm9sQXJlYVZpc2li
+bGWUiIwNY3Zfc3RyYXRpZmllZJSIjAduX2ZvbGRzlEsDjAluX3JlcGVhdHOUSwOMCnJlc2FtcGxp
+bmeUSwKMBHJvcGWURz+5mZmZmZmajAtzYW1wbGVfc2l6ZZRLDIwTc2F2ZWRXaWRnZXRHZW9tZXRy
+eZRDQgHZ0MsAAwAAAAAESwAAAFYAAAg7AAAC7gAABEsAAABWAAAIOwAAAu4AAAAAAAAAAAoAAAAE
+SwAAAFYAAAg7AAAC7pSMEnNodWZmbGVfc3RyYXRpZmllZJSIjAh1c2Vfcm9wZZSJjAtzY29yZV90
+YWJsZZR9lIwMc2hvd25fc2NvcmVzlI+UKIwCRjGUjAJDQZSMBlJlY2FsbJSMA01TRZSMAlIylIwJ
+UHJlY2lzaW9ulIwEUk1TRZSMA0FVQ5SMB0MtSW5kZXiUjANNQUWUkHOMC19fdmVyc2lvbl9flEsD
+jBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOU
+KYGUfZQojAZ2YWx1ZXOUfZQojA9jbGFzc19zZWxlY3Rpb26UjCEoTm9uZSwgc2hvdyBhdmVyYWdl
+IG92ZXIgY2xhc3NlcymUSv////+GlIwMZm9sZF9mZWF0dXJllE5K/v///4aUjBVmb2xkX2ZlYXR1
+cmVfc2VsZWN0ZWSUiUr+////hpRoDX2UaBtLA3WMCmF0dHJpYnV0ZXOUKIwJc3ltYm9saW5nlEsB
+hpSMEW5vcm1hbGl6ZWQtbG9zc2VzlEsChpSMBG1ha2WUSwGGlIwJZnVlbC10eXBllEsBhpSMCmFz
+cGlyYXRpb26USwGGlIwMbnVtLW9mLWRvb3JzlEsBhpSMCmJvZHktc3R5bGWUSwGGlIwMZHJpdmUt
+d2hlZWxzlEsBhpSMD2VuZ2luZS1sb2NhdGlvbpRLAYaUjAp3aGVlbC1iYXNllEsChpSMBmxlbmd0
+aJRLAoaUjAV3aWR0aJRLAoaUjAZoZWlnaHSUSwKGlIwLY3VyYi13ZWlnaHSUSwKGlIwLZW5naW5l
+LXR5cGWUSwGGlIwQbnVtLW9mLWN5bGluZGVyc5RLAYaUjAtlbmdpbmUtc2l6ZZRLAoaUjAtmdWVs
+LXN5c3RlbZRLAYaUjARib3JllEsChpSMBnN0cm9rZZRLAoaUjBFjb21wcmVzc2lvbi1yYXRpb5RL
+AoaUjApob3JzZXBvd2VylEsChpSMCHBlYWstcnBtlEsChpSMCGNpdHktbXBnlEsChpSMC2hpZ2h3
+YXktbXBnlEsChpR0lIwFbWV0YXOUKYwKY2xhc3NfdmFyc5SMBnByaWNlIJRLAoaUhZR1YmF1Lg==
+</properties>
+		<properties node_id="4" format="literal">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x8b\x00\x00\x00\xf6\x00\x00\x05t\x00\x00\x02\xb9\x00\x00\x04\x8c\x00\x00\x01\x1c\x00\x00\x05s\x00\x00\x02\xb8\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x04\x8c\x00\x00\x01\x1c\x00\x00\x05s\x00\x00\x02\xb8', '__version__': 1}</properties>
+		<properties node_id="5" format="pickle">gASVIwEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAPNAAAAagAACTQAAAMsAAADzgAAAJAAAAkzAAADKwAAAAAAAAAACgAAAAPO
+AAAAkAAACTMAAAMrlIwJc2VsZWN0aW9ulF2UjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJsZZR9
+lIwMc2hvd25fc2NvcmVzlI+UKIwCRjGUjAJDQZSMBlJlY2FsbJSMA01TRZSMBFJNU0WUjAJSMpSM
+CVByZWNpc2lvbpSMA0FVQ5SMB0MtSW5kZXiUjANNQUWUkHOMC19fdmVyc2lvbl9flEsBjBBjb250
+ZXh0X3NldHRpbmdzlF2UdS4=
+</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x16\x00\x00\x00/\x00\x00\t\x9b\x00\x00\x03\xa1\x00\x00\x02\x17\x00\x00\x00U\x00\x00\t\x9a\x00\x00\x03\xa0\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x02\x17\x00\x00\x00U\x00\x00\t\x9a\x00\x00\x03\xa0', 'select_rows': True, 'selected_cols': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], 'selected_rows': [0], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="7" format="literal">{'auto_save': False, 'controlAreaVisible': True, 'filter': 'Pickled model (*.pkcls)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x83\x00\x00\x01\xa3\x00\x00\x05\xba\x00\x00\x024\x00\x00\x04\x84\x00\x00\x01\xc9\x00\x00\x05\xb9\x00\x00\x023\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x04\x84\x00\x00\x01\xc9\x00\x00\x05\xb9\x00\x00\x023', 'stored_name': '', 'stored_path': 'C:/Users/wmare/OneDrive/Área de Trabalho/Curso_Atual/Machine Learning e Data Science O Guia para Iniciantes - 2 horas', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
